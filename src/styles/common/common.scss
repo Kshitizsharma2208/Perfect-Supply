@@ -1,0 +1,109 @@
+.swiperContainer {
+  position: relative;
+
+  .carousel-item {
+    width: 1440px;
+    opacity: 1;
+    position: relative;
+    overflow: hidden;
+    z-index: none;
+
+    .banner {
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      animation: scale 30s ease-out infinite;
+    }
+
+    .content {
+      position: absolute;
+      top: 15%;
+      left: 5%;
+      text-align: center;
+      opacity: 0;
+      animation: fade 1s 0.2s ease-out forwards;
+      z-index: 1;
+
+      .animationText {
+        animation-delay: 0.3s;
+        font-size: 24px;
+        color: #ffc400;
+        font-family: 700;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+        animation-name: example;
+        animation-delay: 2s;
+        animation-fill-mode: backwards;
+        animation: 2s linear fadeInUp infinite;
+      }
+
+      .animationTextBig {
+        animation-delay: 0.5s;
+        font-size: 90px;
+        font-weight: 700;
+        color: #ffffff;
+        text-transform: uppercase;
+        margin-bottom: 45px;
+      }
+    }
+
+    .manpower {
+      top: 20%;
+    }
+
+    .hrPartner {
+      top: 40%;
+    }
+
+    .btn {
+      color: #040021;
+      background: #ffc400;
+      text-align: center;
+      position: absolute;
+      bottom: -6%;
+      text-transform: uppercase;
+      padding: 0 20px;
+      height: 60px;
+      border-radius: 3px;
+      min-width: 150px;
+      text-align: center;
+      overflow: hidden;
+      left: 46%;
+      font-weight: 600;
+      animation-delay: 0.4s;
+      z-index: 1;
+    }
+  }
+
+  .bannerOuter {
+    position: absolute;
+    bottom: -1%;
+    // z-index: 0;
+
+    .bannerOuterCover {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+    transform-origin: top center;
+  }
+  100% {
+    transform: scale(1.4);
+  }
+}
+
+@keyframes fade {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}

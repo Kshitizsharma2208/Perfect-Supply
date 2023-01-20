@@ -1,0 +1,48 @@
+.OilAndGasPage {
+  .oilAndGasContentPage {
+    padding-top: 160px;
+    padding-bottom: 55px;
+    padding-left: 50px;
+    display: flex;
+    .leftPart {
+      .header {
+        font-size: 48px;
+        font-weight: 700;
+        margin-bottom: 45px;
+      }
+      .innerContent {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+
+        .headPart {
+          .heading {
+          }
+        }
+
+        .logo {
+          margin-right: 20px;
+
+          .logoImg {
+            width: 20px;
+            height: 20px;
+          }
+
+          .logoContent {
+            font-weight: 400;
+            font-size: 16px;
+            color: #1f1f1f;
+          }
+        }
+      }
+    }
+
+    .rightPart {
+      .location {
+        .locationImg {
+          width: 90%;
+        }
+      }
+    }
+  }
+}

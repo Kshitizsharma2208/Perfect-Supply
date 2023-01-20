@@ -1,0 +1,257 @@
+.homePage {
+  .manPowerSupplyContent {
+    padding-top: 160px;
+    padding-bottom: 55px;
+
+    .manPowerContent {
+      .manPowerLogo {
+        width: 50%;
+        .logo {
+          width: 100%;
+          //   height: 100%;
+        }
+      }
+
+      .aboutManpower {
+        // margin-right: 45px;
+        width: 50%;
+
+        .manPowerheading {
+          color: #8500d1;
+          font-size: 18px;
+          font-weight: 700;
+          text-transform: uppercase;
+          padding-left: 12px;
+          border-left: 5px solid;
+        }
+
+        .manPowerHead {
+          font-size: 48px;
+          color: #040021;
+          text-transform: uppercase;
+          margin-bottom: 30px;
+          font-weight: 700;
+        }
+
+        .manPowerContentDetail {
+          font-size: 15px;
+          font-weight: 400;
+          color: #8f98a8;
+          margin-bottom: 0;
+        }
+
+        .totalExperienceSection {
+          .exprienceContent {
+            display: flex;
+            align-items: center;
+            margin-top: 45px;
+
+            .leftSection {
+              .trophyContent {
+                display: flex;
+
+                .trophyBox {
+                  margin-right: 20px;
+
+                  .trophy {
+                    width: 78px;
+                    margin-top: 10px;
+                  }
+                }
+
+                .experienceBox {
+                  .content {
+                    margin: 0;
+                    font-size: 48px;
+                    color: #8500d1;
+                    font-weight: 800;
+                  }
+
+                  .bottom {
+                    font-size: 18px;
+                    font-weight: 700;
+                    color: #040021;
+                  }
+                }
+              }
+            }
+
+            .rightSection {
+              padding-left: 40px;
+              width: 50%;
+              .aboutExperience {
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 25px;
+                color: #8f98a8;
+                margin-bottom: 0;
+              }
+            }
+          }
+
+          .hrSolution {
+            margin-top: 45px;
+            margin-bottom: 45px;
+
+            .header {
+              display: flex;
+              align-items: center;
+              margin-bottom: 12px;
+
+              .headerLogo {
+                .hrImg {
+                  width: 50px;
+                  height: 50px;
+                }
+              }
+            }
+
+            .headerContent {
+              font-size: 16px;
+              font-weight: 700;
+              margin-bottom: 0;
+              margin-left: 40px;
+            }
+
+            .hrContent {
+              .content {
+                font-size: 15px;
+                font-weight: 400;
+                color: #8f98a8;
+                margin-bottom: 0;
+              }
+            }
+
+            .readMoreBtn {
+              margin-top: 45px;
+              font-weight: 500;
+              color: #ffffff;
+              text-transform: uppercase;
+              padding: 0 20px;
+              height: 60px;
+              background: #8500d1;
+              border-radius: 3px;
+              min-width: 150px;
+              text-align: center;
+              border: none;
+            }
+            .readMoreBtn:hover {
+              transition: all 0.3s ease-out 0s;
+              background: #6639ff;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .whyChooseUs {
+    .chooseUsBanner {
+      .banner {
+        width: 50%;
+        .bannerImg {
+          width: 705px;
+          height: 578px;
+        }
+      }
+      .bannerContent {
+        width: 50%;
+        background-color: #040021;
+        padding-left: 25px;
+        .header {
+          margin-top: 40px;
+
+          .head {
+            color: #ffc400;
+            font-size: 18px;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding-left: 12px;
+            margin: 0;
+            margin-bottom: 18px;
+          }
+        }
+
+        .headerContentUpper {
+          margin-bottom: 30px;
+
+          .content {
+            font-size: 48px;
+            line-height: 58px;
+            color: white;
+            text-transform: uppercase;
+            margin-bottom: 0;
+            font-weight: 700;
+          }
+        }
+
+        .choosingContents {
+          .choosingItem {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+
+            .chooseNumber {
+              margin-left: 8px;
+              margin-right: 28px;
+
+              .chooseBox {
+                border: 1px solid #8f98a8;
+                color: #ffffff;
+                height: 60px;
+                width: 60px;
+                display: inline-block;
+                text-align: center;
+                line-height: 58px;
+                border-radius: 50%;
+                position: relative;
+                transition: all 0.5s ease-out 0s;
+              }
+              ::before {
+                position: absolute;
+                content: "";
+                width: 76px;
+                height: 76px;
+                border: 1px solid #8f98a8;
+                border-radius: 50%;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+              }
+            }
+
+            .choosetext {
+              .headerText {
+                color: #ffffff;
+                font-size: 18px;
+                font-weight: 700;
+                margin: 0;
+              }
+
+              .headerContent {
+                color: #c4c4c4;
+                font-size: 15px;
+                font-weight: 400;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.arrowMain {
+  position: fixed;
+  bottom: 40px;
+  right: 50px;
+  background: #6639ff;
+
+  .arrowUp {
+    width: 30px;
+    height: 30px;
+  }
+}
+.arrowMain :hover {
+  background-color: grey;
+}

@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+.arrowMain {
+  position: fixed;
+  bottom: 40px;
+  right: 50px;
+  background: #6639ff;
+  z-index: -1;
+}
+.arrowUp {
+  width: 30px;
+  height: 30px;
+}
+.arrowMain :hover {
+  background-color: grey;
+}
