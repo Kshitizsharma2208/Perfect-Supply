@@ -41,7 +41,7 @@
   bottom: 40px;
   right: 50px;
   background: #6639ff;
-  z-index: -1;
+  /* z-index: -1; */
 }
 .arrowUp {
   width: 30px;
