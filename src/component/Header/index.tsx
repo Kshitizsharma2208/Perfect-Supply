@@ -11,6 +11,27 @@ import phone from "../../styles/images/phone.png";
 import back from "../../styles/images/headerBack.png";
 
 const Header = () => {
+    const data = [
+        { img: fb },
+        { img: insta },
+        { img: link },
+        { img: whatsapp },
+    ]
+
+    const menu = [
+        { content: "Oil AND GAS", value: "/oilandgas" },
+        { content: "CIVIL CONSTRUCTION", value: "/civil" },
+        { content: "MECHANICAL CONSTRUCTION", value: "/construction" },
+        { content: "ELECTRICAL", value: "/electrical" },
+        { content: "MARINE", value: "/marine" },
+        { content: "Hospitality", value: "/hospitality" },
+        { content: "Production & Manufacturing", value: "/manufacturing" },
+        { content: "Information Technology", value: "/informationTechnology" },
+        { content: "Banking", value: "/banking" },
+        { content: "Logistics & E-Commerce", value: "/logistics" },
+        { content: "Office Staff", value: "/officeStaff" },
+
+    ]
     return (
         <>
             <div id="page-3" className="headerTop container">
@@ -38,26 +59,15 @@ const Header = () => {
                         </div>
                     </div>
                     <div className="socialLogs">
-                        <div className="iconBox">
-                            <a href="">
-                                <img className="icons" src={fb} alt="" />
-                            </a>
-                        </div>
-                        <div className="iconBox">
-                            <a href="">
-                                <img className="icons" src={insta} alt="" />
-                            </a>
-                        </div>
-                        <div className="iconBox">
-                            <a href="">
-                                <img className="icons" src={link} alt="" />
-                            </a>
-                        </div>
-                        <div className="iconBox">
-                            <a href="">
-                                <img className="icons" src={whatsapp} alt="" />
-                            </a>
-                        </div>
+                        {data.map((value) => {
+                            return (
+                                <div className="iconBox">
+                                    <a href="">
+                                        <img className="icons" src={value.img} alt="" />
+                                    </a>
+                                </div>
+                            )
+                        })}
                     </div>
                     <div className="bgHead">
                         <img src={back} alt="" className="backImg" />
@@ -87,17 +97,11 @@ const Header = () => {
                             <div className="dropdown">
                                 <p className="dropbtn">Services</p>
                                 <div className="dropdown-content services">
-                                    <a href="/oilandgas">Oil AND GAS</a>
-                                    <a href="/civil">CIVIL CONSTRUCTION</a>
-                                    <a href="/construction">MECHANICAL CONSTRUCTION</a>
-                                    <a href="/electrical">ELECTRICAL</a>
-                                    <a href="/marine">MARINE</a>
-                                    <a href="/hospitality">Hospitality</a>
-                                    <a href="/manufacturing">Production & Manufacturing</a>
-                                    <a href="/informationTechnology">Information Technology</a>
-                                    <a href="/banking">Banking</a>
-                                    <a href="/logistics">Logistics & E-Commerce</a>
-                                    <a href="/officeStaff">Office Staff</a>
+                                    {menu.map((value) => {
+                                        return (
+                                            <a href={value.value}>{value.content}</a>
+                                        )
+                                    })}
                                 </div>
                             </div>
                             <div className="dropdown">
