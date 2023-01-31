@@ -34,7 +34,7 @@ const AboutServices = () => {
                             <p className="detailDescribe">{SwipeData.PolicyContent}</p>
                         </div>
                         <div className="policyDetails">
-                            <div id="page-1" className="hscPolicy">
+                            <div id="hscPolicy" className="hscPolicy">
                                 <p className="policyDetailhead missionPolicy">
                                     {SwipeData.MissionPolicyHead}
                                 </p>
@@ -42,7 +42,7 @@ const AboutServices = () => {
                             <p className="detailDescribe">{SwipeData.MissionContent}</p>
                         </div>
                         <div className="policyDetails">
-                            <div id="page-2" className="hscPolicy">
+                            <div id="mission" className="hscPolicy">
                                 <p className="policyDetailhead">{SwipeData.VisionPolicyHead}</p>
                             </div>
                             <p className="detailDescribe">{SwipeData.VisionContent}</p>

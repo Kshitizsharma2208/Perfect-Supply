@@ -80,8 +80,8 @@ const Header = () => {
                                 <a href="/aboutservices">
                                     <p className="dropbtn">About Us</p></a>
                                 <div className="dropdown-content">
-                                    <a href="#page-1">HSE Policy</a>
-                                    <a href="#page-2">Mission & Vision</a>
+                                    <a href="#hscPolicy">HSE Policy</a>
+                                    <a href="#mission">Mission & Vision</a>
                                 </div>
                             </div>
                             <div className="dropdown">
