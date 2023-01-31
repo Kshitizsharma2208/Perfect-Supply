@@ -1,0 +1,16 @@
+@import "./styles/_variables.scss";
+
+.arrowMain {
+  position: fixed;
+  bottom: 40px;
+  right: 50px;
+  background: $color-purple;
+  /* z-index: -1; */
+}
+.arrowUp {
+  width: 30px;
+  height: 30px;
+}
+.arrowMain :hover {
+  background-color: $color-grey;
+}

@@ -1,23 +1,27 @@
 import React from 'react';
 import Header from '../../component/Header';
-import SwiperLogicstics from '../../component/SwiperLogicstics';
-import "./Logistic.scss";
+import Swiper from '../../component/Swiper';
+import "../../styles/common/page.scss";
+import Layout from '../Layout';
+import PageLayout from '../pageLayout';
+import SwipeData from './data';
 
 const Logistic = () => {
     return (
         <div className='OilAndGasPage'>
-            <Header />
-            <SwiperLogicstics />
-            <div className="oilAndGasContent container">
-                <div className="content">
-                    <p className="contentHeader">
-                        Man Power Supply for
-                    </p>
-                </div>
-                <p className="contentHeading">Logistic </p>
-                <p className="contentInnner">We focuses on providing skilled workforce for various positions in warehousing, assembly, packaging, fulfillment, transportation and clerical services in the logistics sector.</p>
-            </div>
-
+            <Layout>
+                <Swiper
+                    Header={SwipeData.Header}
+                    Main={SwipeData.Main}
+                    BannerHead={SwipeData.BannerHead}
+                    BannerBottom={SwipeData.BannerBottom}
+                />
+                <PageLayout
+                    title="Man Power Supply for"
+                    content="Logistic"
+                    heading="We focuses on providing skilled workforce for various positions in warehousing, assembly, packaging, fulfillment, transportation and clerical services in the logistics sector."
+                />
+            </Layout>
         </div>
     )
 }

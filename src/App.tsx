@@ -25,20 +25,21 @@ function App() {
       </div>
       <BrowserRouter>
         <Routes>
+          {/* FIXME: router pattern should follow standard */}
           <Route path="/" element={<HomePage />} />
-          <Route path="/AboutServices" element={<AboutServices />} />
-          <Route path="/OilAndGas" element={<OilAndGas />} />
-          <Route path="/Civil" element={<Civil />} />
-          <Route path="/Construction" element={<MechanicalAndConstruction />} />
-          <Route path="/Electrical" element={<Electrical />} />
-          <Route path="/Marine" element={<Marine />} />
-          <Route path="/Manufacturing" element={<Production />} />
-          <Route path="/Hospitality" element={<Hospitality />} />
-          <Route path="/InformationTechnology" element={<InformationTechnology />} />
-          <Route path="/Banking" element={<Banking />} />
-          <Route path="/Logistics" element={<Logistic />} />
-          <Route path="/OfficeStaff" element={<OfficeStaff />} />
-          <Route path="/Contact" element={<ContactUs />} />
+          <Route path="/aboutservices" element={<AboutServices />} />
+          <Route path="/oilandgas" element={<OilAndGas />} />
+          <Route path="/civil" element={<Civil />} />
+          <Route path="/construction" element={<MechanicalAndConstruction />} />
+          <Route path="/electrical" element={<Electrical />} />
+          <Route path="/marine" element={<Marine />} />
+          <Route path="/manufacturing" element={<Production />} />
+          <Route path="/hospitality" element={<Hospitality />} />
+          <Route path="/informationTechnology" element={<InformationTechnology />} />
+          <Route path="/banking" element={<Banking />} />
+          <Route path="/logistics" element={<Logistic />} />
+          <Route path="/officeStaff" element={<OfficeStaff />} />
+          <Route path="/contact" element={<ContactUs />} />
         </Routes>
       </BrowserRouter>
     </div>

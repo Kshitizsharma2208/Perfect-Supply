@@ -5,7 +5,6 @@
 
     .manPowerContent {
       .manPowerLogo {
-        width: 50%;
         .logo {
           width: 100%;
           //   height: 100%;
@@ -13,9 +12,6 @@
       }
 
       .aboutManpower {
-        // margin-right: 45px;
-        width: 50%;
-
         .manPowerheading {
           color: #8500d1;
           font-size: 18px;
@@ -148,16 +144,19 @@
   .whyChooseUs {
     .chooseUsBanner {
       .banner {
-        width: 50%;
+        background: #040021;
+        --bs-gutter-x: 0;
+
         .bannerImg {
-          width: 705px;
-          height: 578px;
+          width: 100%;
+          height: 100%;
+          opacity: 0.4;
         }
       }
       .bannerContent {
-        width: 50%;
         background-color: #040021;
         padding-left: 25px;
+
         .header {
           margin-top: 40px;
 

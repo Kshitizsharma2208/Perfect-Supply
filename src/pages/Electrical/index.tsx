@@ -1,23 +1,27 @@
 import React from 'react';
 import Header from '../../component/Header';
-import SwiperElecrical from '../../component/SwiperElecrical';
-import "./MechanicalAndConstruction.scss";
+import "../../styles/common/page.scss";
+import PageLayout from '../pageLayout';
+import Swiper from '../../component/Swiper';
+import SwipeData from './data.js';
+import Layout from '../Layout';
 
 const Electrical = () => {
     return (
         <div className='OilAndGasPage'>
-            <Header />
-            <SwiperElecrical />
-            <div className="oilAndGasContent container">
-                <div className="content">
-                    <p className="contentHeader">
-                        Man Power Supply for
-                    </p>
-                </div>
-                <p className="contentHeading">Electrical</p>
-                <p className="contentInnner">We supply qualified electrical professionals on short or long term basis for any commercial installations. We ensure that our candidates meet the highest standards..</p>
-            </div>
-
+            <Layout>
+                <Swiper
+                    Header={SwipeData.Header}
+                    Main={SwipeData.Main}
+                    BannerHead={SwipeData.BannerHead}
+                    BannerBottom={SwipeData.BannerBottom}
+                />
+                <PageLayout
+                    title="Man Power Supply for"
+                    content="Electrical"
+                    heading="We supply qualified electrical professionals on short or long term basis for any commercial installations. We ensure that our candidates meet the highest standards.."
+                />
+            </Layout>
         </div>
     )
 }

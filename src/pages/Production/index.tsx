@@ -1,23 +1,30 @@
 import React from 'react';
 import Header from '../../component/Header';
-import SwiperProduction from '../../component/SwiperProduction';
-import "./MechanicalAndConstruction.scss";
+import "../../styles/common/page.scss";
+import SwipeData from './data';
+import Swiper from '../../component/Swiper';
+import Layout from '../Layout';
 
 const Production = () => {
     return (
         <div className='OilAndGasPage'>
-            <Header />
-            <SwiperProduction />
-            <div className="oilAndGasContent container">
-                <div className="content">
-                    <p className="contentHeader">
-                        Man Power Supply for
-                    </p>
+            <Layout>
+                <Swiper
+                    Header={SwipeData.Header}
+                    Main={SwipeData.Main}
+                    BannerHead={SwipeData.BannerHead}
+                    BannerBottom={SwipeData.BannerBottom}
+                />
+                <div className="oilAndGasContent container">
+                    <div className="content">
+                        <p className="contentHeader">
+                            {SwipeData.ProductionHead}
+                        </p>
+                    </div>
+                    <p className="contentHeading">{SwipeData.Header}</p>
+                    <p className="contentInnner">{SwipeData.ProductionContent}</p>
                 </div>
-                <p className="contentHeading">Production & Manufacturing</p>
-                <p className="contentInnner">We serve large, Multi-national manufactures, small to medium sized companies. Our inherent strength is supplying technical, skilled and unskilled staff with production background..</p>
-            </div>
-
+            </Layout>
         </div>
     )
 }

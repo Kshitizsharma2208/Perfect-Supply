@@ -1,23 +1,27 @@
 import React from 'react';
 import Header from '../../component/Header';
-import SwiperBanking from '../../component/SwiperBanking';
-import "./Banking.scss";
+import Swiper from '../../component/Swiper';
+import "../../styles/common/page.scss";
+import Layout from '../Layout';
+import PageLayout from '../pageLayout';
+import SwipeData from './data.js';
 
-const Banking = () => {
+const Banking = (props: any) => {
     return (
         <div className='OilAndGasPage'>
-            <Header />
-            <SwiperBanking />
-            <div className="oilAndGasContent container">
-                <div className="content">
-                    <p className="contentHeader">
-                        Man Power Supply for
-                    </p>
-                </div>
-                <p className="contentHeading">Banking</p>
-                <p className="contentInnner">We serve large, Multi-national manufactures, small to medium sized companies. Our inherent strength is supplying technical, skilled and unskilled staff with production background..</p>
-            </div>
-
+            <Layout>
+                <Swiper
+                    Header={SwipeData.Header}
+                    Main={SwipeData.Main}
+                    BannerHead={SwipeData.BannerHead}
+                    BannerBottom={SwipeData.BannerBottom}
+                />
+                <PageLayout
+                    title="Man Power Supply for"
+                    content="Banking"
+                    heading="We serve large, Multi-national manufactures, small to medium sized companies. Our inherent strength is supplying technical, skilled and unskilled staff with production background.."
+                />
+            </Layout>
         </div>
     )
 }

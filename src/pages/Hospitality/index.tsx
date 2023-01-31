@@ -1,23 +1,27 @@
 import React from 'react';
 import Header from '../../component/Header';
-import SwiperHospitality from '../../component/SwiperHospitality';
-import "./Hospitality.scss";
+import "../../styles/common/page.scss";
+import PageLayout from '../pageLayout';
+import Swiper from '../../component/Swiper';
+import SwipeData from './data.js';
+import Layout from '../Layout';
 
 const Hospitality = () => {
     return (
         <div className='OilAndGasPage'>
-            <Header />
-            <SwiperHospitality />
-            <div className="oilAndGasContent container">
-                <div className="content">
-                    <p className="contentHeader">
-                        Man Power Supply for
-                    </p>
-                </div>
-                <p className="contentHeading">Hospitality</p>
-                <p className="contentInnner">The company has earned an extraordinary reputation for successful supplying of talented hospitality executives in a broad range of top, medium and lower level roles in hotels, resorts, spas, clubs, casinos, restaurants, convention facilities, campus/university dining services, food service companies, and other areas of the hospitality industry..</p>
-            </div>
-
+            <Layout>
+                <Swiper
+                    Header={SwipeData.Header}
+                    Main={SwipeData.Main}
+                    BannerHead={SwipeData.BannerHead}
+                    BannerBottom={SwipeData.BannerBottom}
+                />
+                <PageLayout
+                    title="Man Power Supply for"
+                    content="Hospitality"
+                    heading="The company has earned an extraordinary reputation for successful supplying of talented hospitality executives in a broad range of top, medium and lower level roles in hotels, resorts, spas, clubs, casinos, restaurants, convention facilities, campus/university dining services, food service companies, and other areas of the hospitality industry.."
+                />
+            </Layout>
         </div>
     )
 }
