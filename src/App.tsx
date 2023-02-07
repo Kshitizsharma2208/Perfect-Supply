@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import "./index.css";
+import "./App.scss";
+import "./styles/common.scss";
 import Civil from "./pages/Civil";
 import Electrical from "./pages/Electrical";
 import HomePage from "./pages/HomePage";
@@ -25,7 +26,6 @@ function App() {
       </div>
       <BrowserRouter>
         <Routes>
-          {/* FIXME: router pattern should follow standard */}
           <Route path="/" element={<HomePage />} />
           <Route path="/aboutservices" element={<AboutServices />} />
           <Route path="/oilandgas" element={<OilAndGas />} />

@@ -1,4 +1,4 @@
-@import "../../styles/variables";
+@import "./variables";
 
 .swiperContainer {
   position: relative;
@@ -83,6 +83,61 @@
       height: 100%;
     }
   }
+}
+
+.pageWrapper {
+  .oilAndGasContent {
+    padding-top: 160px;
+    padding-bottom: 55px;
+    padding-left: 50px;
+
+    .content {
+      border-left: 5px solid $border-color;
+      margin-bottom: 17px;
+
+      .contentHeader {
+        font-size: $label-size-normal;
+        font-weight: $font-weight-bold;
+        color: $border-color;
+        text-transform: uppercase;
+        padding-left: 12px;
+        margin: 0;
+      }
+    }
+
+    .contentHeading {
+      font-size: $label-size-below-heigh;
+      line-height: 58px;
+      color: $color-background-blue;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+      font-weight: $font-weight-bold;
+    }
+
+    .contentInnner {
+      font-size: $label-size-smaller;
+      font-weight: $font-weight-small;
+      line-height: 25px;
+      color: $color-lite-blue;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.arrowMain {
+  position: fixed;
+  bottom: 40px;
+  right: 50px;
+  background: #6639ff;
+
+  .arrowUp {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.arrowMain :hover {
+  background-color: grey;
 }
 
 @keyframes scale {

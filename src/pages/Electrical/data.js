@@ -1,11 +1,8 @@
 import BannerHead from "../../styles/images/Electrical.jpg";
-import BannerShade from "../../styles/images/banner-shape.png";
 
-const SwipeData =
+export const swipeData =
 {
-  "Header": "Electrical",
-  "Main": "Man Power Supply",
-  "BannerHead": BannerHead,
-  "BannerBottom": BannerShade,
-}
-export default SwipeData
+  Header: "Electrical",
+  Main: "Man Power Supply",
+  BannerHead: BannerHead,
+};

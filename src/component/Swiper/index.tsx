@@ -1,8 +1,10 @@
 import React from 'react'
-import "../../styles/common/common.scss";
-import banner2 from "../../styles/images/banner2.jpg";
-import banner3 from "../../styles/images/banner_3.jpeg";
+
+import BannerShade from "../../styles/images/banner-shape.png";
+
 const Swiper = (props: any) => {
+    const { BannerBottom = BannerShade } = props;
+
     return (
         <div className='swiperContainer'>
             <div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel">
@@ -34,7 +36,7 @@ const Swiper = (props: any) => {
                 </div>
             </div>
             <div className="bannerOuter">
-                <img src={props.BannerBottom} alt="" className="bannerOuterCover" />
+                <img src={BannerBottom} alt="" className="bannerOuterCover" />
             </div>
         </div>
 

@@ -28,7 +28,21 @@ const Footer = () => {
         { img: fb },
         { img: insta },
         { img: link },
-    ]
+    ];
+
+    const getListView = (data: any) => {
+        return (
+            <div className="supplyContent">
+                {data.map((value: any) => {
+                    return (
+                        <p className="contentSupply">{value.content} </p>
+                    )
+                })}
+            </div>
+        );
+    };
+
+
     return (
         <div className='footerSection'>
             <div className="container footerItems">
@@ -47,22 +61,11 @@ const Footer = () => {
                 </div>
                 <div className="aboutManpowerSupply col-lg-2 col-md-6">
                     <div className="headSupply">Man Power <br /> Supply</div>
-                    <div className="supplyContent">
-                        {data.map((value) => {
-                            return (
-                                <p className="contentSupply">{value.content} </p>
-                            )
-                        })}
-                    </div>
+                    {getListView(data)}
                 </div>
+
                 <div className="aboutHospitality col-lg-2">
-                    <div className="supplyContent">
-                        {content.map((value) => {
-                            return (
-                                <p className="contentSupply">{value.content} </p>
-                            )
-                        })}
-                    </div>
+                    {getListView(content)}
                 </div>
             </div>
         </div>

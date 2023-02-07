@@ -3,7 +3,6 @@ import banner1 from "../../styles/images/banner1.jpg";
 import banner2 from "../../styles/images/banner2.jpg";
 import banner3 from "../../styles/images/banner_3.jpeg";
 import bannerShade from "../../styles/images/banner-shape.png";
-import "../../styles/common/common.scss";
 
 const SwiperIndex = () => {
     return (

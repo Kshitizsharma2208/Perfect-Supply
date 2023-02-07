@@ -1,11 +1,9 @@
 import BannerHead from "../../styles/images/banner_3.jpeg";
-import BannerShade from "../../styles/images/banner-shape.png";
 
-const SwipeData = {
+export const swipeData = {
   Header: "About Us",
   Main: "Man Power  Supply",
   BannerHead: BannerHead,
-  BannerBottom: BannerShade,
   ManPowerHeading: "About Perfect Service",
   ManPowerSubHeading: "UAE's Leading Manpower Supply Company",
 
@@ -24,4 +22,3 @@ const SwipeData = {
   VisionContent:
     " To become the largest provider of international human resources to facilitate growth and prosperity of business in UAE. To be the most preferred Manpower Supply & Recruitment Agency by rendering excellent services to both clients and candidates.",
 };
-export default SwipeData;

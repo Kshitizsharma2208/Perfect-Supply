@@ -1,11 +1,10 @@
 import React from 'react'
-import Footer from '../component/Footer'
-import Header from '../component/Header'
-import Swiper from '../component/Swiper'
+import Header from '../component/Header';
+import Footer from '../component/Footer';
 
 const Layout = (props: any) => {
     return (
-        <div className='oilAndGasPage'>
+        <div className='pageWrapper'>
             <Header />
 
             {props.children}
