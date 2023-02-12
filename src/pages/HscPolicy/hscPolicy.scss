@@ -1,3 +1,5 @@
+@import '../../styles/variables';
+
 .aboutServices {
   .contentAboutServices {
     display: flex;
@@ -19,7 +21,7 @@
       position: relative;
 
       .aboutManpower {
-        color: #8500d1;
+        color: $color-yellow;
         font-size: 18px;
         font-weight: 700;
         /* color: #6639ff; */
@@ -34,7 +36,7 @@
         content: "";
         width: 4px;
         height: 20px;
-        background: #8500d1;
+        background: $color-yellow;
         left: 0;
         top: 3px;
       }
@@ -68,7 +70,7 @@
         position: relative;
 
         .policyDetailhead {
-          color: #8500d1;
+          color: $color-yellow;
           font-size: 18px;
           font-weight: 700;
           /* color: #6639ff; */
@@ -81,7 +83,7 @@
           content: "";
           width: 4px;
           height: 20px;
-          background: #8500d1;
+          background: $color-yellow;
           left: 0;
           top: 3px;
         }

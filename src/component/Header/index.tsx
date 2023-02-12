@@ -1,23 +1,13 @@
 import React from "react";
 import "./header.scss";
-import msgIcon from "../../styles/images/msgNew.png";
-import timeIcon from "../../styles/images/timeNew.png";
-import fb from "../../styles/images/fb.png";
-import link from "../../styles/images/link.png";
-import whatsapp from "../../styles/images/whatsapp.png";
-import insta from "../../styles/images/insta.png";
+
 import logo from "../../styles/images/logo.png";
-import phone from "../../styles/images/phone.png";
-import back from "../../styles/images/headerBack.png";
+
+import { ReactComponent as MsgIcon } from "../../styles/images/envelope-solid.svg";
+import { ReactComponent as TimeIcon } from "../../styles/images/clock-solid.svg";
+import { ReactComponent as Phone } from "../../styles/images/phone-solid.svg";
 
 const Header = () => {
-    const data = [
-        { img: fb },
-        { img: insta },
-        { img: link },
-        { img: whatsapp },
-    ]
-
     const menu = [
         { content: "Oil AND GAS", value: "/oilandgas" },
         { content: "CIVIL CONSTRUCTION", value: "/civil" },
@@ -39,10 +29,10 @@ const Header = () => {
                     <div className="timingMailId">
                         <div className="mailUs">
                             <span className="Img">
-                                <img className="msgIcon" src={msgIcon} alt="" />
+                                <MsgIcon className="msgIcon" />
                             </span>
                             <div className="mailContent">
-                                <span className="head">Mail Us:</span>
+                                <span className="head">Mail Us</span>
                                 <span className="headContent">
                                     sales@perfectservicesuae.com
                                 </span>
@@ -50,27 +40,13 @@ const Header = () => {
                         </div>
                         <div className="officeHours">
                             <span className="Img">
-                                <img className="msgIcon" src={timeIcon} alt="" />
+                                <TimeIcon className="msgIcon" />
                             </span>
                             <div className="officeHour mailContent ">
                                 <span className="head">Office Hours</span>
                                 <span className="headContent">9:00 AM - 06:00 PM</span>
                             </div>
                         </div>
-                    </div>
-                    <div className="socialLogs">
-                        {data.map((value) => {
-                            return (
-                                <div className="iconBox">
-                                    <a href="">
-                                        <img className="icons" src={value.img} alt="" />
-                                    </a>
-                                </div>
-                            )
-                        })}
-                    </div>
-                    <div className="bgHead">
-                        <img src={back} alt="" className="backImg" />
                     </div>
                 </div>
             </div>
@@ -87,25 +63,21 @@ const Header = () => {
                                 </a>
                             </div>
                             <div className="dropdown">
-                                <a href="/aboutservices">
-                                    <p className="dropbtn">About Us</p></a>
-                                <div className="dropdown-content">
-                                    <a href="#hscPolicy">HSE Policy</a>
-                                    <a href="#mission">Mission & Vision</a>
-                                </div>
+                                <a href="/about">
+                                    <p className="dropbtn">About Us</p>
+                                </a>
                             </div>
                             <div className="dropdown">
-                                <p className="dropbtn">Services</p>
-                                <div className="dropdown-content services">
+                                <a href="/services">
+                                    <p className="dropbtn">Services</p>
+                                </a>
+                                {/* <div className="dropdown-content services">
                                     {menu.map((value) => {
                                         return (
                                             <a href={value.value}>{value.content}</a>
                                         )
                                     })}
-                                </div>
-                            </div>
-                            <div className="dropdown">
-                                <p className="dropbtn">Enquiry</p>
+                                </div> */}
                             </div>
                             <div className="dropdown">
                                 <a href="/contact">
@@ -115,7 +87,7 @@ const Header = () => {
                         </div>
                         <div className="estimateCall">
                             <div className="callLogo">
-                                <img className="logo" src={phone} alt="" />
+                                <Phone className="logo" />
                             </div>
                             <div className="estimateHead">
                                 <p className="content">Call For Estimate</p>

@@ -11,7 +11,6 @@ export const swipeData = {
   BannerSecondContentMain: "More than 25+ Years Experiences",
   BannerThird: BannerThird,
   BannerThirdContent: "Your Perfect HR Partner",
-  AboutUsBtn: <button className="btn btn-warning">Read More</button>,
 };
 
 export const staticData = [

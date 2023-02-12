@@ -1,10 +1,13 @@
 import React from 'react';
+
 import logo from "../../styles/images/logo.png"
-import fb from "../../styles/images/fbBlue.png"
-import insta from "../../styles/images/instaBlue.png"
-import link from "../../styles/images/linkdinBlue.png"
+
+import { ReactComponent as FB } from "../../styles/images/square-facebook.svg";
+import { ReactComponent as LI } from "../../styles/images/linkedin.svg";
+import { ReactComponent as Insta } from "../../styles/images/square-instagram.svg";
+import { ReactComponent as WhatsApp } from "../../styles/images/square-whatsapp.svg";
+
 import "./footer.scss"
-import { isContentEditable } from '@testing-library/user-event/dist/utils';
 
 const Footer = () => {
     const data = [
@@ -23,11 +26,6 @@ const Footer = () => {
         { content: "Bank" },
         { content: "Logistics & E-Commerce" },
         { content: "Office Staff" },
-    ]
-    const logoImg = [
-        { img: fb },
-        { img: insta },
-        { img: link },
     ];
 
     const getListView = (data: any) => {
@@ -52,15 +50,15 @@ const Footer = () => {
                     </div>
                     <p className="aboutTag">"We are number one Labour Supply Company supplying Skilled workers across UAE"</p>
                     <div className="socialLogo">
-                        {logoImg.map((value) => {
-                            return (
-                                <img src={value.img} alt="" className='social' />
-                            )
-                        })}
+                        <FB className="social" />
+                        <LI className="social" />
+                        <Insta className="social" />
+                        <WhatsApp className="social" />
+
                     </div>
                 </div>
                 <div className="aboutManpowerSupply col-lg-2 col-md-6">
-                    <div className="headSupply">Man Power <br /> Supply</div>
+                    <div className="headSupply">We Supply <br/> Man Power For</div>
                     {getListView(data)}
                 </div>
 

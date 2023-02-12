@@ -2,7 +2,7 @@ import BannerHead from "../../styles/images/banner_3.jpeg";
 
 export const swipeData = {
   Header: "About Us",
-  Main: "Man Power  Supply",
+  Main: "",
   BannerHead: BannerHead,
   ManPowerHeading: "About Perfect Service",
   ManPowerSubHeading: "UAE's Leading Manpower Supply Company",

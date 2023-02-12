@@ -1,7 +1,7 @@
 import React from 'react';
 import location from "../../styles/images/location.png";
-import phone from "../../styles/images/phone.png";
-import whatsapp from "../../styles/images/whatsapp.png";
+import phone from "../../styles/images/phone-solid.svg";
+import { ReactComponent as Whatsapp } from "../../styles/images/square-whatsapp.svg";
 import msg from "../../styles/images/msg.png";
 import locationImg from "../../styles/images/loc.png"
 import "./ContactUs.scss";
@@ -34,7 +34,7 @@ const ContactUs = () => {
                     </div>
                     <div className="innerContent">
                         <div className="logo">
-                            <img src={whatsapp} alt="" className="logoImg" />
+                            <Whatsapp className="logoImg" />
                         </div>
                         <div className="logoContent">+971 551 319 876</div>
                     </div>

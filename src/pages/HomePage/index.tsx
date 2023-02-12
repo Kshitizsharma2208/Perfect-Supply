@@ -2,13 +2,15 @@ import React from 'react';
 import Layout from '../Layout';
 
 import manpowerLogo from "../../styles/images/aboutPage.png"
-import trophy from '../../styles/images/trophy.png';
 import hrSol from '../../styles/images/hrSol.png';
 import choose from '../../styles/images/choose.jpeg';
 import SwiperIndex from '../../component/SwiperIndex';
 
+import { ReactComponent as Trophy } from "../../styles/images/trophy-solid.svg";
+
 import "./demopage.scss";
 import { staticData } from './data';
+import ReadMoreBtn from '../../component/readMore';
 
 const HomePage = () => {
 
@@ -49,7 +51,7 @@ const HomePage = () => {
                                     <div className="leftSection">
                                         <div className="trophyContent">
                                             <div className="trophyBox">
-                                                <img className='trophy' src={trophy} alt="" />
+                                                <Trophy className='trophy' />
                                             </div>
                                             <div className="experienceBox">
                                                 <p className="content">25+</p>
@@ -60,18 +62,6 @@ const HomePage = () => {
                                     <div className="rightSection">
                                         <p className="aboutExperience">Offering our expert services and <br /> keeping our dedication to all <br /> business sectors, we have remained <br /> at the forefront.</p>
                                     </div>
-                                </div>
-                                <div className="hrSolution">
-                                    <div className="header">
-                                        <div className="headerLogo">
-                                            <img src={hrSol} alt="" className="hrImg" />
-                                        </div>
-                                        <div className="headerContent">One Stop HR Solution</div>
-                                    </div>
-                                    <div className="hrContent">
-                                        <p className="content">We have performed as the most <br /> dependable one-stop shop in the UAE <br /> for the supplying of both blue-collar and <br /> white-collar workers for all major <br /> industrial sectors for short and long term.</p>
-                                    </div>
-                                    <button className="readMoreBtn">Read More</button>
                                 </div>
                             </div>
                         </div>
