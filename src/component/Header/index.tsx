@@ -58,7 +58,7 @@ const Header = () => {
                         </div>
                         <div className="mainMenu">
                             <div className="dropdown">
-                                <a href="/" className="dropbtn">
+                                <a href="/home" className="dropbtn">
                                     Home
                                 </a>
                             </div>

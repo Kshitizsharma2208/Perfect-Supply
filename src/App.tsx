@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, HashRouter, Routes, Route } from "react-router-dom";
 import "./App.scss";
 import "./styles/common.scss";
 import HomePage from "./pages/HomePage";
@@ -14,14 +14,14 @@ function App() {
         <a href="#page-3">
           <img src={arrowUp} alt="" className="arrowUp" /></a>
       </div>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
-          <Route path="/" element={<HomePage />} />
+          <Route path="/home" element={<HomePage />} />
           <Route path="/about" element={<AboutServices />} />
           <Route path="/services" element={<OilAndGas />} />
           <Route path="/contact" element={<ContactUs />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
