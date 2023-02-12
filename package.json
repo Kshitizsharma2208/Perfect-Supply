@@ -1,8 +1,8 @@
 {
-  "name": "react-typescript-demo",
+  "name": "perfect-supply",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/Kshitizsharma2208/Perfect-Supply",
+  "homepage": "https://kshitizsharma2208.github.io/perfect-supply/",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.3.0",
     "@fortawesome/free-solid-svg-icons": "^6.3.0",
