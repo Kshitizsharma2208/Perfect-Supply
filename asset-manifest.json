@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/perfect-supply/static/css/main.820ea70c.css",
-    "main.js": "/perfect-supply/static/js/main.b5fd7579.js",
+    "main.js": "/perfect-supply/static/js/main.b38b9a88.js",
     "static/js/787.8050f04d.chunk.js": "/perfect-supply/static/js/787.8050f04d.chunk.js",
     "static/media/OilandGas.jpg": "/perfect-supply/static/media/OilandGas.d249cddfe096f49b06cb.jpg",
     "static/media/aboutPage.png": "/perfect-supply/static/media/aboutPage.8e28d0f49840db42ba81.png",
@@ -25,11 +25,11 @@
     "static/media/arrow-up-solid.svg": "/perfect-supply/static/media/arrow-up-solid.410422df68586e07a9fd11051ec01dc2.svg",
     "static/media/clock-solid.svg": "/perfect-supply/static/media/clock-solid.bacaa7a84b7ec17311b28f6b15d5257b.svg",
     "main.820ea70c.css.map": "/perfect-supply/static/css/main.820ea70c.css.map",
-    "main.b5fd7579.js.map": "/perfect-supply/static/js/main.b5fd7579.js.map",
+    "main.b38b9a88.js.map": "/perfect-supply/static/js/main.b38b9a88.js.map",
     "787.8050f04d.chunk.js.map": "/perfect-supply/static/js/787.8050f04d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.820ea70c.css",
-    "static/js/main.b5fd7579.js"
+    "static/js/main.b38b9a88.js"
   ]
 }
