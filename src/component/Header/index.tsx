@@ -1,27 +1,18 @@
 import React from "react";
 import "./header.scss";
 
-import logo from "../../styles/images/logo.png";
+// import logo from "../../styles/images/logo.png";
+
+import { ReactComponent as Logo } from "../../styles/images/logo.svg";
 
 import { ReactComponent as MsgIcon } from "../../styles/images/envelope-solid.svg";
 import { ReactComponent as TimeIcon } from "../../styles/images/clock-solid.svg";
 import { ReactComponent as Phone } from "../../styles/images/phone-solid.svg";
+import { Link } from "react-router-dom";
+import { email, ph } from "../../constant";
 
 const Header = () => {
-    const menu = [
-        { content: "Oil AND GAS", value: "/oilandgas" },
-        { content: "CIVIL CONSTRUCTION", value: "/civil" },
-        { content: "MECHANICAL CONSTRUCTION", value: "/construction" },
-        { content: "ELECTRICAL", value: "/electrical" },
-        { content: "MARINE", value: "/marine" },
-        { content: "Hospitality", value: "/hospitality" },
-        { content: "Production & Manufacturing", value: "/manufacturing" },
-        { content: "Information Technology", value: "/informationTechnology" },
-        { content: "Banking", value: "/banking" },
-        { content: "Logistics & E-Commerce", value: "/logistics" },
-        { content: "Office Staff", value: "/officeStaff" },
 
-    ]
     return (
         <>
             <div id="page-3" className="headerTop container">
@@ -34,7 +25,7 @@ const Header = () => {
                             <div className="mailContent">
                                 <span className="head">Mail Us</span>
                                 <span className="headContent">
-                                    sales@perfectservicesuae.com
+                                    {email}
                                 </span>
                             </div>
                         </div>
@@ -54,35 +45,29 @@ const Header = () => {
                 <div className="container">
                     <div className="content">
                         <div className="logo">
-                            <img src={logo} alt="" className="logoImg" />
+                            {/* <img src={logo} alt="" className="logoImg" /> */}
+                            <Logo />
                         </div>
                         <div className="mainMenu">
                             <div className="dropdown">
-                                <a href="/home" className="dropbtn">
+                                <Link to="/" className="dropbtn">
                                     Home
-                                </a>
+                                </Link>
                             </div>
                             <div className="dropdown">
-                                <a href="/about">
+                                <Link to="/about">
                                     <p className="dropbtn">About Us</p>
-                                </a>
+                                </Link>
                             </div>
                             <div className="dropdown">
-                                <a href="/services">
+                                <Link to="/services">
                                     <p className="dropbtn">Services</p>
-                                </a>
-                                {/* <div className="dropdown-content services">
-                                    {menu.map((value) => {
-                                        return (
-                                            <a href={value.value}>{value.content}</a>
-                                        )
-                                    })}
-                                </div> */}
+                                </Link>
                             </div>
                             <div className="dropdown">
-                                <a href="/contact">
+                                <Link to="/contact">
                                     <p className="dropbtn">Contact</p>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                         <div className="estimateCall">
@@ -91,7 +76,7 @@ const Header = () => {
                             </div>
                             <div className="estimateHead">
                                 <p className="content">Call For Estimate</p>
-                                <p className="content num">+971 551319876</p>
+                                <p className="content num">{ph}</p>
                             </div>
                         </div>
                     </div>

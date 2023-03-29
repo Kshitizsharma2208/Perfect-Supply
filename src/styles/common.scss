@@ -2,6 +2,7 @@
 
 .swiperContainer {
   position: relative;
+  min-height: 100vh;
 
   .carousel-item {
     width: 100%;
@@ -139,4 +140,111 @@
     transform: translateY(0px);
     opacity: 1;
   }
+}
+
+@media (max-width: 575.98px) {
+
+  .headerTop {
+    padding: 4px 0!important;
+  }
+
+   .timingMailId {
+    // display: block !important;
+    padding: 0 8px;
+
+    .mailUs {
+      padding-right: 8px!important;
+      width: 65%!important;
+
+      .headContent {
+        word-break: break-word;
+      }
+    }
+    
+    .officeHours {
+      padding-left: 8px!important;
+      padding-top: 8px;
+      width: 35%!important;
+    }
+  }
+
+  .content {
+    display: block!important;
+    padding: 8px 0;
+
+    .mainMenu {
+      padding: 16px 0 ;
+    }
+
+    .estimateCall {
+      display: none!important;
+    }
+  }
+
+  .aboutHospitality {
+    display: none;
+  }
+
+  .swiperContainer {
+    min-height: unset;
+  }
+
+  .animationText {
+    margin-bottom: 4px!important;
+  }
+
+  .swiperContainer .carousel-item .content {
+    top: 8%!important;
+  }
+
+  .animationTextBig,
+  .manPowerHead {
+    font-size: 32px!important;
+    line-height: 38px!important;
+    margin-bottom: 24px!important;
+  }
+
+  .servicePageWrapper,
+  .manPowerSupplyContent {
+    padding-top: 20px!important;
+  }
+
+  .location {
+    display: none;
+  }
+
+  .contentAboutServices {
+    padding: 12px 0!important;
+    display: block !important;
+  }
+
+  .oilAndGasContent,
+  .leadingManpowerSection,
+  .contactUsWrapper {
+    padding: 12px!important;
+  }
+
+  .subheaderManpower {
+    font-size: 24px!important;
+    line-height: 28px!important;
+  }
+
+  .aboutServices .aboutBanner .banner,
+  .manPowerLogo {
+   display: none;
+  }
+
+  .contactUsWrapper {
+
+    .header {
+      font-size: 24px!important;
+      line-height: 28px!important;
+      margin-bottom: 12px!important;
+    }
+  }
+
+  .logoContent {
+    word-break: break-word;
+  }
+  
 }

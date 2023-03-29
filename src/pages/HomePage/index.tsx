@@ -1,8 +1,8 @@
 import React from 'react';
 import Layout from '../Layout';
 
-import manpowerLogo from "../../styles/images/aboutPage.png"
-import hrSol from '../../styles/images/hrSol.png';
+// import manpowerLogo from "../../styles/images/aboutPage.png"
+import manpowerLogo from "../../styles/images/manpowerSupply.jpg";
 import choose from '../../styles/images/choose.jpeg';
 import SwiperIndex from '../../component/SwiperIndex';
 
@@ -10,7 +10,6 @@ import { ReactComponent as Trophy } from "../../styles/images/trophy-solid.svg";
 
 import "./demopage.scss";
 import { staticData } from './data';
-import ReadMoreBtn from '../../component/readMore';
 
 const HomePage = () => {
 
@@ -41,6 +40,7 @@ const HomePage = () => {
                     <div className="manPowerContent row">
                         <div className="manPowerLogo col-xl-6 col-lg-5">
                             <img src={manpowerLogo} alt="" className="logo" />
+                            {/* <img src={manpowerLogo} alt="" className="logo" /> */}
                         </div>
                         <div className="aboutManpower col-xl-6 col-lg-5">
                             <p className="manPowerheading">About Company</p>

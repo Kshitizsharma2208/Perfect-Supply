@@ -4,10 +4,13 @@
   padding-left: 50px;
   display: flex;
   .leftPart {
+    padding-right: 15px;
+    
     .header {
       font-size: 48px;
       font-weight: 700;
       margin-bottom: 45px;
+      text-transform: uppercase;
     }
     .innerContent {
       display: flex;

@@ -1,4 +1,5 @@
-import BannerHead from "../../styles/images/Contact.jpg";
+// import BannerHead from "../../styles/images/Contact.jpg";
+import BannerHead from "../../styles/images/contactDetails.jpg";
 
 export const swipeData = {
   Header: "Contact",
